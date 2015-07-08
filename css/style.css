@@ -242,6 +242,11 @@ article em {
 	font-weight: 400;
 }
 
+.highlight {
+	color: #03A9F4;
+	font-weight: 600;
+}
+
 /*to reduce padding for a <p> the proceeds a <ol>*/
 .ol-leader {
 	padding: .7rem 0;
@@ -696,6 +701,12 @@ About Me Section
 	color: hsl(255,0%,45%);
 	padding: 0 3rem 3.5rem;
 }
+#skills .collapse-card__body ol {
+	margin: 0 2.5rem 3rem;
+}
+#skills .collapse-card__body .current {
+	margin-top: -15px;
+}
 /*.collapse-card__body p:last-of-type {
 	padding-bottom: 40px;
 }*/
@@ -781,13 +792,19 @@ About Me Section
 
 
 .tech-current-1 {
-	width: 75%;
+	width: 100%;
 }
 .tech-current-2 {
-	width: 85%;
+	width: 95%;
 }
 .tech-current-3 {
-	width: 45%;
+	width: 70%;
+}
+.tech-current-4 {
+	width: 85%;
+}
+.tech-current-5 {
+	width: 65%;
 }
 
 
@@ -802,10 +819,10 @@ About Me Section
 
 
 .tech-learning-1 {
-	width: 75%;
+	width: 45%;
 }
 .tech-learning-2 {
-	width: 85%;
+	width: 45%;
 }
 .tech-learning-3 {
 	width: 45%;
@@ -823,13 +840,13 @@ About Me Section
 
 
 .tech-planning-1 {
-	width: 75%;
+	width: 10%;
 }
 .tech-planning-2 {
-	width: 85%;
+	width: 10%;
 }
 .tech-planning-3 {
-	width: 45%;
+	width: 10%;
 }
 
 
