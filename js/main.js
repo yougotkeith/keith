@@ -75,7 +75,7 @@ jQuery(document).ready(function($){
 			var mq = viewportSize();
 			$('.cd-folding-panel').removeClass('is-open');
 			$('.cd-main').removeClass('fold-is-open');
-			
+			$('body').removeClass('overflow-hidden');
 			(mq == 'mobile' || $('.no-csstransitions').length > 0 ) 
 				/* according to the mq, immediately remove the .overflow-hidden or wait for the end of the animation */
 				? $('body').removeClass('overflow-hidden')
