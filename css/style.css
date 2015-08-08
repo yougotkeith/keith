@@ -1663,6 +1663,15 @@ folding panel
 	-moz-transition: -moz-transform 0.2s 0.1s, opacity 0.2s 0.1s;
 	transition: transform 0.2s 0.1s, opacity 0.2s 0.1s;
 }
+.cd-fold-content em:not(:first-of-type) {
+	margin-top: 45px;
+}
+
+
+
+
+
+
 .cd-fold-content p {
 	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
