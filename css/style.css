@@ -679,7 +679,7 @@ About Me Section
 }
 
 
-
+/*~*/
 /* ========= Skills section ========== */
 #skills .m-content {
 	position: relative;
@@ -699,10 +699,11 @@ About Me Section
 }
 #skills .collapse-card__body p {
 	color: hsl(255,0%,45%);
-	padding: 0 3rem 3.5rem;
+	/*padding: 0 3rem 10px 0;*/
+	/*margin-left: -20px;*/
 }
 #skills .collapse-card__body ol {
-	margin: 0 2.5rem 3rem;
+	margin: 0 0 3rem;
 }
 #skills .collapse-card__body .current {
 	margin-top: -15px;
@@ -747,8 +748,6 @@ About Me Section
 }
 
 
-
-
 /* ========= Tech Roadmap Section ========== */
 
 /* ==== COLORS ==== 
@@ -764,16 +763,28 @@ About Me Section
 
 .tech div {
 	height: 3px;
-	margin-top: -4px;
+	margin-top: 5px;
 	margin-bottom: 10px;
+}
+
+.tech p,
+.tech h3 {
+	line-height: 2rem;
 }
 
 .tech h3 {
 	opacity: .9;
-	margin-left: -20px;
+	font-size: 1.6rem;
 }
 .tech h3 em {
 	font-weight: 700;
+}
+
+.tech p {
+	margin-top: 20px;
+}
+.tech p:first-of-type {
+	margin-top: -10px;
 }
 
 .progress {
@@ -783,31 +794,108 @@ About Me Section
 
 
 /* === Currently Using === */
-.tech-current {
-	background-color: LimeGreen;
-}
 .current .tech h3 em {
 	color: LimeGreen;
 }
 
+.tech-current {
+	background-color: LimeGreen;
+}
 
 .tech-current-1 {
 	width: 100%;
 }
+.tech-current-1:before {
+	content: '100%';
+	background-color: LimeGreen;
+	border-radius: 3px;
+	position: relative;
+	top: -.9rem;
+	line-height: 2rem;
+	padding: 3px 7px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: white;
+}
+
 .tech-current-2 {
 	width: 95%;
 }
+.tech-current-2:before {
+	content: '92%';
+	background-color: LimeGreen;
+	border-radius: 3px;
+	position: relative;
+	top: -.9rem;
+	line-height: 2rem;
+	padding: 3px 7px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: white;
+}
+
 .tech-current-3 {
 	width: 70%;
 }
+.tech-current-3:before {
+	content: '70%';
+	background-color: LimeGreen;
+	border-radius: 3px;
+	position: relative;
+	top: -.9rem;
+	line-height: 2rem;
+	padding: 3px 7px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: white;
+}
+
 .tech-current-4 {
 	width: 85%;
 }
+.tech-current-4:before {
+	content: '85%';
+	background-color: LimeGreen;
+	border-radius: 3px;
+	position: relative;
+	top: -.9rem;
+	line-height: 2rem;
+	padding: 3px 7px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: white;
+}
+
 .tech-current-5 {
 	width: 65%;
 }
+.tech-current-5:before {
+	content: '65%';
+	background-color: LimeGreen;
+	border-radius: 3px;
+	position: relative;
+	top: -.9rem;
+	line-height: 2rem;
+	padding: 3px 7px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: white;
+}
+
 .tech-current-6 {
 	width: 75%;
+}
+.tech-current-6:before {
+	content: '75%';
+	background-color: LimeGreen;
+	border-radius: 3px;
+	position: relative;
+	top: -.9rem;
+	line-height: 2rem;
+	padding: 3px 7px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: white;
 }
 
 
@@ -824,11 +912,49 @@ About Me Section
 .tech-learning-1 {
 	width: 75%;
 }
-.tech-learning-2 {
-	width: 40%;
+.tech-learning-1:before {
+	content: '75%';
+	background-color: DeepPink;
+	border-radius: 3px;
+	position: relative;
+	top: -.9rem;
+	line-height: 2rem;
+	padding: 3px 7px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: white;
 }
+
+.tech-learning-2 {
+	width: 45%;
+}
+.tech-learning-2:before {
+	content: '45%';
+	background-color: DeepPink;
+	border-radius: 3px;
+	position: relative;
+	top: -.9rem;
+	line-height: 2rem;
+	padding: 3px 7px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: white;
+}
+
 .tech-learning-3 {
-	width: 55%;
+	width: 50%;
+}
+.tech-learning-3:before {
+	content: '50%';
+	background-color: DeepPink;
+	border-radius: 3px;
+	position: relative;
+	top: -.9rem;
+	line-height: 2rem;
+	padding: 3px 7px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: white;
 }
 
 
@@ -841,23 +967,74 @@ About Me Section
 	color: hsl(216,82%,60%);
 }
 
-
-.tech-planning-1 {
-	width: 10%;
-}
-.tech-planning-2 {
-	width: 10%;
-}
-.tech-planning-3 {
-	width: 10%;
+.tech-planning-1,
+.tech-planning-2,
+.tech-planning-3,
+.tech-planning-4,
+.tech-planning-5 {
+	width: 45px;
 }
 
-
-
-/*@Tech Roadmap*/
-@media only screen and (max-width: 320px) {
-	
+/*.tech-planning-1 {
+	width: 20%;
+}*/
+.tech-planning-1:before {
+	content: '5%';
+	background-color: hsl(216,82%,60%);
+	border-radius: 3px;
+	position: relative;
+	top: -.9rem;
+	line-height: 2rem;
+	padding: 3px 7px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: white;
 }
+
+/*.tech-planning-2 {
+	width: 20%;
+}*/
+.tech-planning-2:before {
+	content: '5%';
+	background-color: hsl(216,82%,60%);
+	border-radius: 3px;
+	position: relative;
+	top: -.9rem;
+	line-height: 2rem;
+	padding: 3px 7px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: white
+}
+
+/*.tech-planning-3 {
+	width: 20%;
+}*/
+.tech-planning-3:before {
+	content: '5%';
+	background-color: hsl(216,82%,60%);
+	border-radius: 3px;
+	position: relative;
+	top: -.9rem;
+	line-height: 2rem;
+	padding: 3px 7px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: white
+}
+
+
+@media only screen and (min-width: 769px) {
+	.current:first-of-type,
+	.learning:first-of-type,
+	.planning:first-of-type {
+		margin: 30px 0;
+	}
+
+	#skills .collapse-card__body p {
+		padding: .5rem 1rem 1rem;
+	}
+} /* END @media 768px (desktop) */
 
 
 
